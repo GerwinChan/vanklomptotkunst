@@ -16,20 +16,20 @@
                 <div class="hamburger" id="showRightPush"></div>
 
                 <ul>
-                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="index.php?action=homepage" class="active">Home</a></li>
                     <li>
                       <a href="locations.php" class="locations">Locations</a>
 
                       <div class="dropdown">
-                        <div class="row"><a href="locations.php?action=edam">Edam</a></div>
-                        <div class="row"><a href="index.php?action=volendam">Volendam</a></div>
-                        <div class="row"><a href="index.php?action=warder">Warder</a></div>
-                        <div class="row"><a href="#">Kwadijk</a></div>
-                        <div class="row"><a href="#">Oosthuizen</a></div>
-                        <div class="row"><a href="#">Schardam</a></div>
-                        <div class="row"><a href="#">Beets</a></div>
-                        <div class="row"><a href="#">Middelie</a></div>
-                        <div class="row"><a href="#">Hobrede</a></div>
+                        <div class="row"><a href="?action=locations&id=1">Edam</a></div>
+                        <div class="row"><a href="?action=locations&id=2">Volendam</a></div>
+                        <div class="row"><a href="?action=locations&id=3">Warder</a></div>
+                        <div class="row"><a href="?action=locations&id=4">Kwadijk</a></div>
+                        <div class="row"><a href="?action=locations&id=5">Oosthuizen</a></div>
+                        <div class="row"><a href="?action=locations&id=6">Schardam</a></div>
+                        <div class="row"><a href="?action=locations&id=7">Beets</a></div>
+                        <div class="row"><a href="?action=locations&id=8">Middelie</a></div>
+                        <div class="row"><a href="?action=locations&id=9">Hobrede</a></div>
                       </div>
                     </li>
                     <li><a href="agenda.php" id="agenda">Agenda</a></li>
