@@ -11,9 +11,10 @@ if(isset($_POST['login'])){
     $pass = "123";
     if($_POST['pass'] == $pass){
         $_SESSION['logged_in'] = 1;
-        echo "<input type='submit'  name='submit' value='edit'>";
+        echo "Welkom";
+
     }else{
-        echo "doei";
+        echo "Wrong";
     };
 };
 

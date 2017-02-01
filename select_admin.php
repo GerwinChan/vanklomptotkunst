@@ -9,26 +9,20 @@
 
 <?php
 
-include 'include/config.php';
-$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-if ($mysqli->connect_errno)
 
-{
-    echo "Failed to connect to MySQL:
-    (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+$mysqli = new mysqli('localhost', 'root', '', 'klomptotkunst');
+
+if ($mysqli->connect_errno) {
+    echo "Failed to connect(" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
 
-
-
-if(isset($_POST['login'])){
-$id = $_POST['id'];
-    $schoolnaam = $_POST['locatienaam'];
-    $adress = $_POST['beschrijf'];
-    $zipcode = $_POST['foto'];
-
-
-    $sql = "UPDATE `plaats` SET `locatie` = '" . $schoolnaam . "', `beschrijving` = '" . $adress . "', `foto` = '" . $zipcode . "' WHERE `id_plaats` ='$id'";
+if(isset($_POST['update'])){
+    $id = $_POST['id'];
+    $schoolnaam = $_POST['schoolnaam'];
+    $adress = $_POST['adress'];
+    $zipcode = $_POST['zipcode'];
+    $sql = "UPDATE plaats SET locatie = '  $schoolnaam  ', beschrijving = '  $adress  ', foto = '  $zipcode  ' WHERE id_plaats = '$id'";
     $result = $mysqli->query($sql);
     if(mysqli_error($mysqli)){
         echo mysqli_error($mysqli);
@@ -36,7 +30,23 @@ $id = $_POST['id'];
         echo($sql);
     }
     else{
-        echo "<h1>School is Geupdate</h1>";
+        echo "<h1>UPDATED</h1>";
+
+    }
+}
+
+
+
+if(isset($_POST['delete'])) {
+    $sql = "DELETE FROM plaats WHERE id_plaats = $id";
+    $result = $mysqli->query($sql);
+    if(mysqli_error($mysqli)){
+        echo mysqli_error($mysqli);
+        echo "<br>";
+        echo($sql);
+    }
+    else{
+        echo "<h1>DELETED</h1>";
     }
 }
 

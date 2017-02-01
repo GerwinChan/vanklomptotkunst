@@ -3,17 +3,36 @@
 <?php @include('partials/nav.php'); ?>
 
     <!-- Header -->
+
+    <?php
+
+
+
+    $sql = "SELECT * FROM verenigingplaats WHERE id_verenigingplaats =" . $id;
+    $result = $mysqli->query($sql);
+
+    echo "string";
+
+    while ($row = $result->fetch_assoc()) {
+
+    ?>
+
+
+
+
             <header>
                 <div class="container">
-                    <div class="image volendam">
+                    <div class="image volendam"  style="background: url('images/media/<?php echo $row['foto'];?>') center;">
                         <div class="overlay">
-                            <h1>Volendams Museum</h1>
+                            <h1>  <?php echo $row['naam']; ?> </h1>
                             <a href="#" class="btn">Website</a>
                         </div>
                     </div>
                 </div>
             </header>
     <!-- End Header -->
+
+    <?php } ?>
 
 	<!-- profile -->
      <section id="profile">

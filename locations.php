@@ -66,6 +66,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 				<div class="col-25 filter-kunst" style="background: url('<?php echo $row['foto'];?>') no-repeat center top; background-size: cover;">
+          
 					<a href="#">
 					    <div class="overlay">
 					        <h3>  <?php echo $row['naam']; ?></h3>

@@ -10,7 +10,7 @@
         <span class="tooltip" title="Account bekijken"></span>
     </div>
     <div class="edit">
-        <span class="tooltip" title="Pagina bewerken"></span>
+        <span class="tooltip" title="Pagina bewerken" o></span>
     </div>
     <div class="calender">
         <span class="tooltip" title="Evenement toevoegen"></span>
