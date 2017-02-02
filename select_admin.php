@@ -35,6 +35,25 @@ if(isset($_POST['update'])){
     }
 }
 
+if(isset($_POST['create'])){
+
+    $schoolnaam = $_POST['schoolnaam'];
+    $adress = $_POST['adress'];
+    $zipcode = $_POST['zipcode'];
+    $sql =  "INSERT INTO vereniging (naam,foto,beschrijving) VALUES ('$schoolnaam','$zipcode','$adress')";
+;
+    $result = $mysqli->query($sql);
+    if(mysqli_error($mysqli)){
+        echo mysqli_error($mysqli);
+        echo "<br>";
+        echo($sql);
+    }
+    else{
+        echo "<h1>CREATED</h1>";
+
+    }
+}
+
 
 
 if(isset($_POST['delete'])) {

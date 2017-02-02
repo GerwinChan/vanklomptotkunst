@@ -32,7 +32,7 @@
             </header>
     <!-- End Header -->
 
-    <?php } ?>
+
 
 	<!-- profile -->
      <section id="profile">
@@ -43,7 +43,7 @@
                         <h2>Over ons</h2>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque urna vel orci interdum rhoncus. Curabitur id lorem risus. Phasellus sed elit ac nisl iaculis aliquam. Donec aliquet rutrum lobortis.
+                            <?php echo $row['beschrijving'];?>
                         </p>
 
                         <p>
@@ -53,7 +53,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque urna vel orci interdum rhoncus. Curabitur id lorem risus. Phasellus sed elit ac nisl iaculis aliquam. Donec aliquet rutrum lobortis.
                         </p>
                     </div>
-
+  <?php } ?>
 
 
                     <div class="col-50">

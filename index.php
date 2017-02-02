@@ -78,8 +78,8 @@ $id = $_GET['id'];
       case 'verenigingpagina':
 
 
-
       $id = $_GET['id'];
+
 
 
 

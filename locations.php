@@ -22,7 +22,7 @@ while ($row = $result->fetch_assoc()) {
     <!-- Header -->
             <header>
                 <div class="container">
-                    <div class="image" style="background: url('images/media/<?php echo $row['foto'];?>') center;">
+                    <div class="image" style="background: url('<?php echo $row['foto'];?>') center;">
                         <div class="overlay">
                             <h1>  <?php echo $row['locatie']; ?>  </h1>
                             <p> <?php echo $row['beschrijving']; ?></p>
@@ -66,8 +66,8 @@ while ($row = $result->fetch_assoc()) {
 
 
 				<div class="col-25 filter-kunst" style="background: url('<?php echo $row['foto'];?>') no-repeat center top; background-size: cover;">
-          
-					<a href="#">
+
+					<a href="index.php?action=verenigingpagina&id=<?php echo  $id ?>">
 					    <div class="overlay">
 					        <h3>  <?php echo $row['naam']; ?></h3>
 					        <p>
@@ -77,6 +77,9 @@ while ($row = $result->fetch_assoc()) {
 					    </div>
 					</a>
 				</div>
+
+
+
 
 <?php } ?>
 			</div>

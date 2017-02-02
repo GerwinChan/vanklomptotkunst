@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<h2>Update en Delete plaatsen</h2>
+<h2>Create Update en Delete plaatsen</h2>
 
 <br>
 

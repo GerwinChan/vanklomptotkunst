@@ -2,7 +2,6 @@
 <?php @include('partials/search-bar.php'); ?>
 <?php @include('partials/nav.php'); ?>
 
-
 <html>
 <head>
 <title>Admin login</title>
@@ -18,7 +17,7 @@
 </p>
 <p>
 <label for="phpro_password">Password</label>
-<input type="text" id="phpro_password" name="phpro_password" value="" maxlength="20" />
+<input type="password" id="phpro_password" name="phpro_password" value="" maxlength="20" />
 </p>
 <p>
 <input type="submit" value="→ Login" />
